@@ -23,8 +23,8 @@ namespace Prueba
 
             //ENCONTRAR ELEMENTO EN UN ARREGLO
             string[] stringArray = { "value1", "value2", "value3", "value4" };
-            var value = "value3";
-            var check = Array.Exists(stringArray, x => x.ToUpper() == value.ToUpper());
+            var value = "valUe3";
+            var check = Array.Exists(stringArray, x => string.Equals(x, value, StringComparison.CurrentCultureIgnoreCase));
             if (check)
             {
                 Console.WriteLine("{0} Si se encontro en el arreglo", value);
